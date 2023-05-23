@@ -1,0 +1,196 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Russo+One&display=swap');
+@import url("assets/css/colors.css");
+
+
+/* Configs */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--grey-light);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.content-box {
+    width: 1200px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    color: white;
+    font-size: 40px;
+    text-shadow: 0px 0px 60px red;
+}
+
+/* Config Scrool*/
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f90a23;
+    background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+/* CSS */
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--grey-light);
+    display: flex;
+}
+
+main .components {
+    width: 30%;
+    height: 100vh;
+    background-color: var(--grey-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .components div {
+    width: 80%;
+    height: 200px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: var(--grey-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .components div img {
+    width: 220px;
+}
+
+main .components div i {
+    font-size: 40px;
+    width: 40px;
+}
+
+main .components div button {
+    background-color: transparent;
+    border: 2px solid var(--main);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+
+
+/* GAMES */
+.pc {
+    width: 70%;
+    padding: 0 30px;
+}
+
+.result-info {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    padding: 30px 0;
+}
+
+.result-info .pc-image {
+    flex: 2;
+    background-color: var(--grey-dark);
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-info .pc-image img {
+    width: 400px;
+}
+
+.result-info .pc-info {
+    background-color: var(--grey-dark);
+    margin: 10px;
+    flex: 4;
+    color: white;
+    padding: 50px;
+    display: flex;
+}
+
+.result-info .pc-info .pc-info-content {
+    width: 70%;
+    flex: 3;
+}
+
+.result-info .pc-info h3 {
+    font-size: 38px;
+}
+
+.result-info .pc-info .more-infos {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.result-info .pc-info .more-infos div {
+    background-color: var(--grey-light);
+    width: 60%;
+    height: 20%;
+    border: 2px solid var(--main);
+    border-radius: 5px;
+    color: var(--main);
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.results-games {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+
+.games .content-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.games .content-box img {
+    width: 200px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0;
+}
+
+.games .content-box .box-game {
+    gap: 0;
+}
+
+.games .content-box .box-game .box-game-fps {
+    background-color: var(--grey-dark);
+    margin: 0px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+    margin-top: -10px;
+}
